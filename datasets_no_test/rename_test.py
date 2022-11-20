@@ -20,8 +20,8 @@ for i in range(size):
 match = 'E:/LaTeX_OCR_PRO-master/LaTeX_OCR_PRO-master/data/full/matching/test.matching.txt'
 formula='E:/LaTeX_OCR_PRO-master/LaTeX_OCR_PRO-master/data/full/formulas/test.formulas.norm.txt'
 for i in range(size):
-    with open(match, 'a', encoding='utf-8') as f:
-        fileName = str(i) + '.png'
+      with open(match, 'a', encoding='utf-8') as f:
+        fileName = lines[i][:-1] + '.png'
         f.write(fileName + ' ' + str(i) + '\n')
-    with open(formula, 'a',encoding='utf-8') as f1:
-        f1.write(str(i) + '.formulas' + '\n')
+      with open(formula, 'a',encoding='utf-8') as f1:
+        f1.write(lines[i][:-1] + '.formulas' + '\n')
