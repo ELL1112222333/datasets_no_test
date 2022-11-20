@@ -15,13 +15,13 @@ json_str_d2 = json.dumps(d2)
 with open('vocab1.json', 'w') as json_file:
     json_file.write(json_str_v1)
 
-with open('dev.json', 'w') as json_file:
+with open('data/dev.json', 'w') as json_file:
     json_file.write(json_str_d1)
 
-with open('vocab2.json', 'w') as json_file:
+with open('data/vocab2.json', 'w') as json_file:
     json_file.write(json_str_v2)
 
-with open('train.json', 'w') as json_file:
+with open('data/train.json', 'w') as json_file:
     json_file.write(json_str_d2)
 
 
